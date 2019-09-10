@@ -1,0 +1,66 @@
+# this is the path that the object graph will get dumped to (in JSON-LD format),
+# you probably shouldn't change it, but you can if you want.
+db: relay.jsonld
+
+# Listener
+listen: 0.0.0.0
+port: 8080
+
+# Note
+note: "<b>No Nazi Shit. No TERFs. No Harassment.</b><br />Administrators and Moderators reserve the right to moderate relay per their discretion. Blocked instances mirror suspended domains at <a href='https://pettingzoo.co/about/more'>https://pettingzoo.co/about/more</a><br />Please report any abuse to tyr@pettingzoo.co"
+
+# this section is for ActivityPub
+ap:
+  # this is used for generating activitypub messages, as well as instructions for
+  # linking AP identities.  it should be an SSL-enabled domain reachable by https.
+  host: 'relay.pettingzoo.co'
+  blocked_instances:
+  - 'mstdn.foxfam.club'
+  - 'vipgirlfriend.xxx'
+  - 'cnet.site'
+  - '2hu.club'
+  - 'baraag.net'
+  - 'gameliberty.club'
+  - 'loli.estate'
+  - 'pawoo.net'
+  - 'shitasstits.life'
+  - 'social.homunyan.com'
+  - 'social.super-niche.club'
+  - 'stereophonic.space'
+  - 'weeaboo.space'
+  - 'wxw.moe'
+  - 'exited.eu'
+  - 'feminism.lgbt'
+  - 'freespeech.firedragonstudios.com'
+  - 'freespeechextremist.com'
+  - 'functor.pro'
+  - 'gab.ai'
+  - 'gab.com'
+  - 'gab.polaris-1.work'
+  - 'gab.protohype.net'
+  - 'gabfed.com'
+  - 'social.hatthieves.es'
+  - 'liberdon.com'
+  - 'melalandia.tk'
+  - 'nii-san.club'
+  - 'noagendasocial.com'
+  - 'pl.smuglo.li'
+  - 'qoto.org'
+  - 'rapefeminists.network'
+  - 'shitposter.club'
+  - 'social.i2p.rocks'
+  - 'social.sunshinegardens.org'
+  - 'spinster.xyz'
+  - 'video.halle-leaks.de'
+  - 'wagesofsinisdeath.com'
+  - 'warc.space'
+  - 'weedis.life'
+  - 'fedichive.tk'
+  - 'rrfarmbot.appspot.com'
+  - 'kiwifarms.cc'
+  - 'social.culturewar.us'
+  - 'kazvam.com'
+  whitelist_enabled: false
+  whitelist:
+  - 'pettingzoo.co'
+

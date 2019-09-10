@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mastodon-relay:
+    build:
+      context: ./
+    #image: koehn/diaspora:latest
+    container_name: mastodon-relay
+    volumes:
+      - /opt/docker/relay/relay.jsonld:/relay/relay.jsonld:rw
+    ports:
+      - 127.0.0.1:8181:8080/tcp
+    restart: always
+    networks:
+      - haus
+networks:
+  haus:
+    external:
+      name: haus
